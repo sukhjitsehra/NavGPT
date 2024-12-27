@@ -25,7 +25,7 @@ def pollutionGPT_prompt(intial_prompt,origin_lat,origin_lon,destination_lat,dest
     # print("Hello vAsi")
 
 
-    llm = ChatOpenAI(api_key ="sk-proj-fZej3Swsk4pFFJag8uLNT3BlbkFJ18QRP2zz1FOdJwfschpn", model="gpt-4o")
+    llm = ChatOpenAI(api_key ="crime_key", model="gpt-4o")
 
     origin, destination = get_coordinates_from_args(origin_lat,origin_lon,destination_lat,destination_lon)
     mode = mod
