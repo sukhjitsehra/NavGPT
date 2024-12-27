@@ -103,7 +103,7 @@ def main(origin_lat, origin_lon, destination_lat, destination_lon, mode, route_m
   ]
 }
 '''
-    llm = ChatOpenAI(api_key="sk-proj-fZej3Swsk4pFFJag8uLNT3BlbkFJ18QRP2zz1FOdJwfschpn", model="gpt-4o")
+    llm = ChatOpenAI(api_key="crime_key", model="gpt-4o")
     
     pollution_question = "What is the average air quality index on each part of the route? State point of each part. Classify it in a structured way and if you say moderate, say orange afterwards; for healthy, it should say green; for unhealthy, it should say red. Perform calculations and give me the answer. The best part should be classified as green and worst part as red."
     crime_question = "What is the crime data on each part of the route? State point of each part. Classify it in a structured way. The crime severity index of 0-50 should be classified as green, 50-75 should be orange and 75 should be red."
