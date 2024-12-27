@@ -1,7 +1,7 @@
 import requests
 
 def get_pollution_data(lat, lon):
-    api_key = "2e8767f4724d611fad2ff41b4935f0d3b3da985e"  # Replace with your actual API key
+    api_key = "2e8767f4724d611fad2ff41b4935f0d3b3da985e"  
     url = f"https://api.waqi.info/feed/geo:{lat};{lon}/?token={api_key}"
     
     response = requests.get(url)
