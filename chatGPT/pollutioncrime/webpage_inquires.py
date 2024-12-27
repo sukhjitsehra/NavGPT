@@ -30,7 +30,7 @@ def chat_completion_request(model, messages, tools):
     """
     Sends a request to the OpenAI API to generate a chat response.
     """
-    client = OpenAI(api_key = "sk-proj-fZej3Swsk4pFFJag8uLNT3BlbkFJ18QRP2zz1FOdJwfschpn")
+    client = OpenAI(api_key = "crime_key")
     response = client.chat.completions.create(
         model=model,
         messages=messages,
