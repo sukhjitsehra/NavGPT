@@ -157,7 +157,7 @@ def get_city_crime_data_manual(city):
                     f"When you give crime data values make sure to put these \'\' quotes to highlight the numerical values."
 
     prompt = f"Give me the crime information about {city}. {format_string} \n Here is the crime data information(Only use this information to give crime data): \n {CRIME_DATA_STRING}"
-    llm = ChatOpenAI(api_key="sk-proj-fZej3Swsk4pFFJag8uLNT3BlbkFJ18QRP2zz1FOdJwfschpn", model="gpt-4o")
+    llm = ChatOpenAI(api_key="crime_key", model="gpt-4o")
     response = llm.invoke(prompt).content
     return response
 
