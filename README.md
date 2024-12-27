@@ -23,6 +23,7 @@ Install latest android studio version and don't forget to install the emulator i
 - After Signup it will redirect you to login
 
 # Create a .env file 
+# You would need to generate/purchase the API keys for the following services.
 - chatgpt_api_key = your_api_key
 - weather_api_key = your_api_key
 - graphhopper_api_key = your_api_key
