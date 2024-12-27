@@ -1,6 +1,8 @@
 # OSX
 #
 .DS_Store
+# Ignore environment files containing sensitive data
+config.env
 
 # Xcode
 #
